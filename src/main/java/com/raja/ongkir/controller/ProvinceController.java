@@ -13,7 +13,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 @RequestMapping("/api/province")
 public class ProvinceController {
 
-    private RestTemplate restTemplate;
+    private final RestTemplate restTemplate;
 //
     public ProvinceController(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
